@@ -27,9 +27,22 @@ def check_Winner():
         return False
     
 def main():
+    count = 0
     while True:
         f()
         if count%2 == 0:
             who("X") #Это фунция которую я вызову позже
         else:
             who("O")
+        if count > 3: #Как только больше 3 ходов прошло ,начинаем проверять на победу
+            winner = check_Winner()
+            if winner:
+                f()
+                print(winner,"Победил")
+                break
+        count +=1
+        if count >=9: #Проверка ничью
+            f()
+            print('Ничья')
+            break
+main()
