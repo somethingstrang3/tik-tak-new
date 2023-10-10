@@ -7,6 +7,6 @@ def main():
     while True:
         f()
         if count%2 == 0:
-            who("X") 
+            who("X") #Это фунция которую я вызову позже
         else:
             who("O")
