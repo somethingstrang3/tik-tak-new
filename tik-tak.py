@@ -13,7 +13,7 @@ def main():
             who("X") #Это фунция которую я вызову позже
         else:
             who("O")
-
+            
 def check_Winner():
     for j in pobeda:
         if (board[j[0]-1]) == (board[j[1]-1]) == (board[j[2]-1]):
